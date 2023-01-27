@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#6C6161"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stopwatch_icon_free_vector" />
+
+    <TextView
+        android:id="@+id/timer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3AD640"
+
+            android:insetRight="20dp"
+            android:onClick="startTimer"
+            android:text="Start"
+            app:iconTint="#DCCFCF" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CF3434"
+            android:onClick="stopTimer"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/hold_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:insetLeft="20dp"
+            android:onClick="holdTimer"
+            android:text="Hold" />
+    </LinearLayout>
+
+</LinearLayout>
